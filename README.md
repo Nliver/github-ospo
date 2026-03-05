@@ -44,7 +44,7 @@ We have used those as placeholder values where our policies point to internal on
 In addition to the information in this repository, we've also released a number of GitHub Actions that can help OSPOs track activity, clean house, and automate other useful activities. The actions are released in separate repos but are all linked here for convenience.
 
 - [github-community-projects/contributors](https://github.com/github-community-projects/contributors) - Given an organization or repository, produces information about the contributors over the specified time period.
-- [github-community-projects/evergreen](https://github.com/github-community-projects/evergreen) - Enable automated security updates and open a issue/PR in repos in an org that have dependency files but no dependabot.yaml file
+- [github-community-projects/evergreen](https://github.com/github-community-projects/evergreen) - Enable automated security updates and open an issue/PR in repos in an org that have dependency files but no dependabot.yaml file
 - [github-community-projects/issue-metrics](https://github.com/github-community-projects/issue-metrics) - Gather metrics on issues/prs/discussions such as time to first response, count of issues opened, closed, etc.
 - [github-community-projects/stale-repos](https://github.com/github-community-projects/stale-repos) - Identify and report on repositories with no activity for configurable amount of time, in order to surface inactive repos to be considered for archival
 - [github-community-projects/cleanowners](https://github.com/github-community-projects/cleanowners) - A GitHub Action to suggest removal of non-organization members from CODEOWNERS files
