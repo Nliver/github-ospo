@@ -2,7 +2,7 @@
 
 ![Swirling design graphic](https://github.blog/wp-content/uploads/2023/12/Productivity-LightMode-2.png?resize=1200%2C630)
 
-Keeping your repositories' dependencies up to date is crucial for maintaining quality and security. Outdated dependencies can expose your project to vulnerabilities, compromise its stability, and hinder its overall performance. In order to answer this question for ourselves, we created a [GitHub Action: Evergreen](https://github.com/github/evergreen).
+Keeping your repositories' dependencies up to date is crucial for maintaining quality and security. Outdated dependencies can expose your project to vulnerabilities, compromise its stability, and hinder its overall performance. In order to answer this question for ourselves, we created a [GitHub Action: Evergreen](https://github.com/github-community-projects/evergreen).
 
 ## The challenge of dependency management
 
@@ -18,7 +18,7 @@ While Dependabot version updates automates the task of updating dependencies, it
 
 ## Introducing Evergreen
 
-Inside GitHub, our Open Source Program Office (OSPO) wanted to make it easy to deploy Dependabot version updates throughout our own organizations. To achieve this, we built a GitHub Action called [Evergreen](https://github.com/github/evergreen). Evergreen acts as a dependency management assistant for your teams, ensuring that Dependabot version updates are enabled and configured consistently across all your repositories.
+Inside GitHub, our Open Source Program Office (OSPO) wanted to make it easy to deploy Dependabot version updates throughout our own organizations. To achieve this, we built a GitHub Action called [Evergreen](https://github.com/github-community-projects/evergreen). Evergreen acts as a dependency management assistant for your teams, ensuring that Dependabot version updates are enabled and configured consistently across all your repositories.
 
 [Small aside]With Evergreen, GitHub identified hundreds of our own private repositories to enable Dependabot on, and we'll continue to run updates so we can confidently keep our repositories up to date.[Small aside]
 
@@ -34,4 +34,4 @@ Once the GitHub Action triggers, it checks whether Dependabot version updates is
 
 ## Conclusion
 
-Keeping dependencies up to date is a non-negotiable aspect of ensuring the quality and security of your projects. Dependabot has made this task significantly easier, but it's also equally as important to ensure consistent implementation across all repositories. Evergreen automates the process of enabling and configuring it for every repository. Ensure your dependencies are evergreen! Check out [the repository](https://github.com/github/evergreen) for more information.
+Keeping dependencies up to date is a non-negotiable aspect of ensuring the quality and security of your projects. Dependabot has made this task significantly easier, but it's also equally as important to ensure consistent implementation across all repositories. Evergreen automates the process of enabling and configuring it for every repository. Ensure your dependencies are evergreen! Check out [the repository](https://github.com/github-community-projects/evergreen) for more information.

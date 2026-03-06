@@ -6,7 +6,7 @@
 
 At GitHub, we believe that data-driven insights are the keys to success for any software development project. Understanding the health and progress of your issues, pull requests, and discussions is crucial for effective collaboration, maintainership, and project management.
 
-That is why we’re excited to announce the release of the [Issue Metrics GitHub Action](https://github.com/github/issue-metrics), a powerful tool that empowers developers and teams to measure key metrics and gain valuable insights into their projects.
+That is why we’re excited to announce the release of the [Issue Metrics GitHub Action](https://github.com/github-community-projects/issue-metrics), a powerful tool that empowers developers and teams to measure key metrics and gain valuable insights into their projects.
 
 With the new Issue Metrics GitHub Action, you can now easily track and monitor important metrics related to issues, pull requests, and discussions, such as **time to first response**, **time to close**, and more for any given time period.
 
@@ -40,7 +40,7 @@ Product development teams rely heavily on the code review process to collaborate
 
 Setting up the Issue Metrics GitHub Action takes a few minutes, compared to the few hours it takes to calculate these metrics manually. You also only need to set up the action once, and it will run on a regular basis of your own choosing. It integrates into your existing GitHub Actions workflow or you can create a new workflow specifically for metrics tracking.
 
-The action provides a wide range of customizable options, allowing you to tailor the issues, pull requests, and discussions measured by utilizing [GitHub’s powerful search filtering](https://docs.github.com/en/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests). [Ready to use configurations](https://github.com/github/issue-metrics#example-workflows) have been tested and used internally at GitHub and are now available for you to try out as well.
+The action provides a wide range of customizable options, allowing you to tailor the issues, pull requests, and discussions measured by utilizing [GitHub’s powerful search filtering](https://docs.github.com/en/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests). [Ready to use configurations](https://github.com/github-community-projects/issue-metrics#example-workflows) have been tested and used internally at GitHub and are now available for you to try out as well.
 
 Here is one such example that runs monthly to report on metrics for issues created last month:
 
@@ -80,7 +80,7 @@ jobs:
           echo "last_month=$first_day..$last_day" >> "$GITHUB_ENV"
 
       - name: Run issue-metrics tool
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v4
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SEARCH_QUERY: 'repo:owner/repo is:issue created:${{ env.last_month }} -reason:"not planned"'
@@ -95,6 +95,6 @@ jobs:
 
 ## Ready to start leveling up your GitHub project management?
 
-Head over to the [Issue Metrics GitHub Action repository](https://github.com/github/issue-metrics) to explore the documentation, installation instructions, and examples. The repository provides a comprehensive README file that guides you through the setup process and showcases the wide range of metrics you can measure. If you need additional help, feel free to open an issue in the repository.
+Head over to the [Issue Metrics GitHub Action repository](https://github.com/github-community-projects/issue-metrics) to explore the documentation, installation instructions, and examples. The repository provides a comprehensive README file that guides you through the setup process and showcases the wide range of metrics you can measure. If you need additional help, feel free to open an issue in the repository.
 
 GitHub is committed to providing developers with the best tools to enhance collaboration and productivity. The Issue Metrics GitHub Action is a significant step towards empowering teams to measure key metrics related to issues, pull requests, and discussions. By gaining valuable insights into the pulse of your projects, you can drive continuous improvement and deliver exceptional software. We are using this in several places internally across GitHub to help us continually improve and hope this action can help you as well. Happy coding!
